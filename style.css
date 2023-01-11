@@ -28,7 +28,7 @@ ul{
 }
 
 body{
-    background-color: var(--very--Dark-Blue);
+    background-color: rgb(255, 0, 0);
     font-family: 'Overpass', sans-serif;
     font-size: 15px;
     background-color: var(--very-Dark-Blue);
@@ -39,8 +39,10 @@ body{
     flex-direction: column;
 }
 
+/*Rating state*/
+
 .rating_state{
-    background-color: var(--Dark-Blue);
+    background: linear-gradient(to bottom, hsl(212, 19%, 15%),hsl(214, 12%, 11%));
     width: 327px;
     height: 364px;
     border-radius: 16px;
@@ -58,24 +60,94 @@ body{
     padding: 8px;;
     background-color: beige;
     border-radius: 60px;
+    background-color: var(--Dark-Blue);
+}
+.rating_state p{
+    width: 100%;
+    font-size: 15px;
+    text-align: justify;
+    letter-spacing: 0;
+
+}
+
+.number{
+    padding: 18px 22px 18px 22px;
+    border-radius: 80%;
+    background-color: var(--Dark-Blue);
+    margin: 0 4px 0 4px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.number-clicked{
+    background: var(--Orange);
 }
 
 
-.rating_state ul li{
-    padding: 18px 22px 18px 22px;
-    border-radius: 100%;
-    background-color:var(--very-Dark-Blue)
+.rating_state ul li:hover{
+
+    background-color: var(--Orange);
+}
+
+
+
+.rating_state ul{
+    margin-top: 20px;
 }
 
 
 .rating_state button{
+    cursor: pointer;
+    color: white;
     text-decoration: none;
     background-color: var(--Orange);
     border-radius: 30px;
     border: none;
-    margin: ;
+    margin: 20px 0 20px 0;
     width: 100%;
     padding: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
 
+}
+
+/*thanks*/
+
+.thanks_state{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to bottom, hsl(212, 19%, 15%),hsl(214, 12%, 11%));
+    width: 327px;
+    height: 364px;
+    border-radius: 16px;
+    margin: auto;
+    padding: 30px;
+    color: var(--Light-Grey);
+    text-align: center;
+}
+
+.thanks_state img{
+    height: 100px;
+    width: 130px;
+}
+
+.thanks_state h2{
+    color: white;
+}
+
+.points{
+    color: var(--Orange);
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.points-clicked{
+    color: var(--Orange);
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+    padding: 8px;
 }
 
